@@ -10,3 +10,5 @@ node_modules
 .turbo/
 
 CLAUDE.md
+.env
+test_debug.ts

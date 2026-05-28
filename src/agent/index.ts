@@ -223,6 +223,11 @@ export class PharosAgentKit {
     return erc721Mint(this, to, tokenAddress, tokenId);
   }
 
+  async debugTransaction(txHash: string) {
+    const { debugTransaction } = await import("../tools/debug_transaction/debugTransaction");
+    return debugTransaction(txHash);
+  }
+
   async getTokenDataByTicker(
     ticker: string,
   ): Promise<any | undefined> {
